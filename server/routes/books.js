@@ -28,7 +28,7 @@ router.get('/', (req, res, next) => {
 router.get('/add', (req, res, next) => {
   res.render('books/details', {
     title: "Add a new book",
-    games: '',
+    books: '',
    // displayName: req.user.displayName
   });
 });
