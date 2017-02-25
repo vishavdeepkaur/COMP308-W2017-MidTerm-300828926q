@@ -44,10 +44,12 @@ router.post('/add', (req, res, next) => {
     /*****************
      * ADD CODE HERE *
      *****************/
-     let newBook= Book({
-      "price": req.body.price,
-      "author": req.body.author,
-      "genre": req.body.genre
+    let newBook = book({
+       "Title" : req.body.booktitle,   
+       "Description": "",    
+       "Price" : req.body.price,
+       "Author" : req.body.author,
+       "Genre" : req.body.genre
     });
   game.create(newBook, (err, book) => {
       if(err) {
